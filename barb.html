@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBER EAGLES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/image.jpeg" alt="Logo da Barber Eagle's">
+        <h1>BARBER EAGLES</h1>
+    </header>
+    <main>
+        <h2>Agende seu horário</h2>
+        <form id="booking-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit">Agendar</button>
+        </form>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
